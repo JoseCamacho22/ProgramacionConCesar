@@ -45,6 +45,10 @@ namespace MiPrimerProyecto
                 Console.WriteLine("Todos los numeros son mayores que 0");
                 todosMayores = true;
             }
+            else
+            {
+                Console.WriteLine("Hay algun numero que es menor o igual a 0");
+            }
             if (numX > 0 || numY > 0 || numZ > 0)
             {
                 Console.WriteLine("Al menos un numero es mayor a 0");
