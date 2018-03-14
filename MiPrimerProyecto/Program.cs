@@ -28,7 +28,31 @@ namespace MiPrimerProyecto
             
             Console.WriteLine("Probando mi primer proyecto con C#");
 
+            Console.WriteLine("Introduzca su nombre de usuario");
+            string nombreUsuario = Console.ReadLine();
+            Console.WriteLine("Introduzca una contraseña de usuario");
+            string pwd = Console.ReadLine();
 
+            if (nombreUsuario == "usuarioX")
+            {
+                if (pwd == "12345")
+                {
+                    Console.WriteLine("Bienvenido " + nombreUsuario);
+                }
+                else
+                {
+                    Console.WriteLine("la contraseña es incorrecta");
+                }
+            }
+            else
+            {
+                Console.WriteLine("El nombre de Usuario es incorrect0");
+            }
+
+
+
+
+/*
             #region Operadores logicos
             const int miConst = 10;
             Console.WriteLine("Introduce un numero entero X");
