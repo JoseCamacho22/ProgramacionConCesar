@@ -25,7 +25,7 @@ namespace MiPrimerProyecto
         /// <param name="args"> descripcion del parametro arg</param>
         static void Main(string[] args)
         {
-            #region Imprimir
+            
             Console.WriteLine("Probando mi primer proyecto con C#");
 
             const int miConst = 10;
@@ -33,7 +33,8 @@ namespace MiPrimerProyecto
             //como el usuario ingresa un string tengo que parsearlo.
             int num =Int32.Parse( Console.ReadLine());
 
-            #region Operadores Matematicos
+
+             #region Operadores Matematicos
             int suma = miConst + num;
             Console.WriteLine("suma = " + suma);
             
@@ -61,12 +62,31 @@ namespace MiPrimerProyecto
             resta -= numB;
             Console.WriteLine("el nuevo valor de la resta  es = " + resta);
             multi *= numB;
-            Console.WriteLine("el nuevo valor de la multiplicacion  es = " + multi);
+            Console.WriteLine("el nuevo valor de la multiplicacion  es = " + multi);*/
             #endregion
 
+            #region Operadores Relacionales
 
+            if (miConst == num)
+            {
+                Console.WriteLine("El numero es igual a la constante");
+            }
+
+            if (miConst !=num)
+            {
+                Console.WriteLine("El numero es distinto a la constante");
+            }
+            if (miConst > num)
+            {
+                Console.WriteLine("El numero es menor a la constante");
+            }
+            if (miConst < num)
+            {
+                Console.WriteLine("El numero es mayor a la constante");
+            }
 
             #endregion
+
 
             #region ReadKey
             Console.ReadKey();
