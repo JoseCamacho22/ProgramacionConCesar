@@ -25,9 +25,14 @@ namespace MiPrimerProyecto
         /// <param name="args"> descripcion del parametro arg</param>
         static void Main(string[] args)
         {
-            
+
             Console.WriteLine("Probando mi primer proyecto con C#");
-            Console.WriteLine("Seleccione : 1 Sumar , 2 Restar , 3 Multiplicar");
+
+
+
+
+ /*    //excepcion throw   
+  *       Console.WriteLine("Seleccione : 1 Sumar , 2 Restar , 3 Multiplicar");
             try
             {
                 int menu = Int32.Parse(Console.ReadLine());
