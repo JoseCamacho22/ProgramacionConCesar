@@ -29,7 +29,17 @@ namespace MiPrimerProyecto
             Console.WriteLine("Probando mi primer proyecto con C#");
             Console.WriteLine("Introduce un numero entero X");
             int numX = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Introduce un numero entero Y");
+
+            for(int i = 1; i <= 10; i++)
+            {
+                int res = i * numX;
+                Console.WriteLine("{0} * {1} = {2} ", i, numX, res);
+            }
+
+
+
+      //Bloque switch
+           /* Console.WriteLine("Introduce un numero entero Y");
             int numY = Int32.Parse(Console.ReadLine());
 
             Console.WriteLine("Seleccione : 1 Sumar , 2 Restar , 3 Multiplicar");
