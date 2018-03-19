@@ -34,7 +34,14 @@ namespace MiPrimerProyecto
             }
             catch (System.FormatException e)
             {
-                Console.WriteLine("Error: " + e);
+                if(e.Message == null)
+                {
+                    throw;
+                }
+                else
+                {
+                    Console.WriteLine("ERROR: " + e.Message);
+                }
             }
 
             Console.ReadKey();
